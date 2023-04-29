@@ -4,9 +4,10 @@ Organização Geral do Projeto:
   ✔ arquivos; @done(23-04-28 22:36)
   ✔ TODO; @done(23-04-28 22:36)
   ✔ README; @done(23-04-28 22:36)
+  ✔ node_modules(utilizado para organizar o tema do projeto); @done(23-04-29 16:11)
 
 Hero:
-  ☐ menu;
+  ✔ menu; @done(23-04-29 16:11)
   ☐ formulário;
   ☐ transição inicial;
 

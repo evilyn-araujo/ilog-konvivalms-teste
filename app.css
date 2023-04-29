@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+body {
+  background: #0E4D96;
+}
+
+.btn-custom-konviva {
+  background: #91268F;
+  color: #FFFFFF;
+}
+
+.btn-custom-konviva:hover {
+  background: #B73BAC;
+  color: #FFFFFF;
+}
+
+.nav-custom-konviva {
+  display: flex;
+  gap: 1.9375rem;
+}
+
+.banner-img {
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-image: url("assets/banner.png");
+}

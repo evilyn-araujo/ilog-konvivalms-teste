@@ -51,7 +51,7 @@ Este projeto utiliza as seguintes tecnologias:
 
 ## Autor
 
-Este projeto foi criado por [Evilyn Araújo de Lima](https://seusite.com). Você pode entrar em contato comigo através do meu site ou das redes sociais listadas abaixo:
+Este projeto foi criado por **Evilyn Araújo de Lima**. Você pode entrar em contato comigo através das minhas redes sociais listadas abaixo:
 
 - Instagram: [@evilyn.arj](https://www.instagram.com/evilyn.arj/)
 - Telegram: [@evilynarj](https://t.me/evilynarj)
