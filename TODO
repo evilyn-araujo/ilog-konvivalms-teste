@@ -1,0 +1,22 @@
+Organização Geral do Projeto:
+  ✔ pastas; @done(23-04-28 22:36)
+  ✔ favicon; @done(23-04-28 22:36)
+  ✔ arquivos; @done(23-04-28 22:36)
+  ✔ TODO; @done(23-04-28 22:36)
+  ✔ README; @done(23-04-28 22:36)
+
+Hero:
+  ☐ menu;
+  ☐ formulário;
+  ☐ transição inicial;
+
+Cursos & Trilhas:
+  ☐ card interativo(cursos);
+  ☐ card interativo(Trilhas);
+  ☐ preparar para o Zero(espaço vazio);
+
+Footer:
+  ☐ links;
+
+API:
+  ☐ teste com listagem de cursos;
