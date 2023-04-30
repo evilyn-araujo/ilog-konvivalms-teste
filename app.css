@@ -10,7 +10,8 @@
 
 body {
   background: #004C9A;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .btn-custom-konviva {
@@ -36,6 +37,10 @@ body {
   background-size: 100%;
 }
 
+.box-responsive {
+  display: none;
+}
+
 /* formulário */
 .form-custom-konviva {
   display: flex;
@@ -47,9 +52,10 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 340px;
+  height: 100%;
   padding: 1.5rem 1.625rem;
-  background: #FFFFFF;}
+  background: #FFFFFF;
+}
 
 /* inputs do formulário(login e senha) */
 .input {
@@ -82,7 +88,7 @@ body {
   background: none;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .banner-img {
     position: relative;
     height: 28rem;
@@ -98,9 +104,16 @@ body {
 
   .form-konviva {
     background: rgba(255, 255, 255, 0.7);
+    height: 19em;
   }
 
   .input {
     border: none;
+  }
+
+  .box-responsive {
+    padding-top: 8rem;
+    display: block;
+    /* background: #FFFFFF; */
   }
 }
