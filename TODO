@@ -8,8 +8,7 @@ Organização Geral do Projeto:
 
 Hero:
   ✔ menu; @done(23-04-29 16:11)
-  ☐ formulário;
-  ☐ transição inicial;
+  ✔ formulário; @done(23-04-30 11:40)
 
 Cursos & Trilhas:
   ☐ card interativo(cursos);
