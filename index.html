@@ -9,46 +9,73 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="app.css">
-  <title>Portal Konviva</title>
+  <title>Academia Konviva</title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <a class="navbar-brand" href="#">
-        <div class="m-3">
-          <img src="assets/menu-konviva.svg" alt="logo konviva">
-        </div>
-      </a>
-      <button class="navbar-toggler outline-0 border-0 m-3" type="button" data-toggle="collapse"
-        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav nav-custom-konviva p-2">
-          <li class="nav-item active d-flex">
-            <img src="assets/icons/home.svg">
-            <a class="nav-link m-1" href="#">HOME</a>
-          </li>
-          <li class="nav-item d-flex">
-            <img src="assets/icons/school.svg">
-            <a class="nav-link m-1" href="#">CERTIFICADOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link m-1" href="#">BLOG</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link m-1" href="#">CADASTRE-SE</a>
-          </li>
-          <li class="nav-item m-1">
-            <button type="button" class="btn btn-custom-konviva rounded-0">
-              Acesse Agora
-              <img src="assets/icons/login.svg">
-            </button>
-          </li>
-        </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+      <div class="m-3">
+        <img src="assets/menu-konviva.svg" alt="logo konviva">
       </div>
-    </nav>
+    </a>
+    <button class="navbar-toggler outline-0 border-0 m-3" type="button" data-toggle="collapse"
+      data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end z-index-1000" id="navbarNav">
+      <ul class="navbar-nav nav-custom-konviva p-2">
+        <li class="nav-item active d-flex">
+          <img src="assets/icons/home.svg">
+          <a class="nav-link m-1" href="#">HOME</a>
+        </li>
+        <li class="nav-item d-flex">
+          <img src="assets/icons/school.svg">
+          <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/consultacertificado/"
+            target="_blank">CERTIFICADOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/pagina/11" target="_blank">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/pagina/15"
+            target="_blank">CADASTRE-SE</a>
+        </li>
+        <li class="nav-item m-1">
+          <button type="button" class="btn btn-custom-konviva rounded-0">
+            Acesse Agora
+            <img src="assets/icons/login.svg">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <!-- banner -->
+    <div class="banner-img">
+      <div class="form-custom-konviva">
+        <form class="form-konviva">
+          <div class="d-flex flex-column mb-2">
+            <p class="input-label">Login</p>
+            <div id="input-email" class="input">
+              <input id="email" type="email" autocomplete="off" placeholder="email@gmail.com" required>
+            </div>
+          </div>
+          <div class="d-flex flex-column">
+            <p class="input-label">Senha</p>
+            <div id="input-password" class="input">
+              <input id="email" type="password" autocomplete="off" placeholder="********" required>
+            </div>
+          </div>
+          <div class="d-flex flex-column">
+            <button class="btn btn-custom-konviva rounded-0 mt-4 mb-4" type="submit">Entrar</button>
+            <button class="btn-link-konviva d-flex justify-content-start" type="button">
+              <strong>Esqueci minha senha</strong>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   </header>
 
   <!-- JavaScript (Opcional) -->
