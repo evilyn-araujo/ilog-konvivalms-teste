@@ -86,9 +86,7 @@ específico de tela */
 /* Início estilo da sessão de cursos */
 .carousel-custom {
   width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: row;
 
   position: relative;
   color: #323232;
@@ -109,7 +107,7 @@ específico de tela */
   opacity: 1;
 }
 
-.box-btn-carroussel {
+.box-btn-carousel {
   justify-content: space-between;
   margin-top: 20rem;
 }
@@ -247,6 +245,37 @@ específico de tela */
   width: 100%;
 }
 
+.session-modules {
+  margin-top: 12rem;
+  height: 40rem;
+}
+
+footer {
+  border-top: 1px solid #6c757d;
+}
+
+/* footer */
+.final-footer-konviva {
+  width: 100%;
+  height: 80px;
+  background: #E8E8E8;
+}
+
+.footer-links {
+  width: 100%;
+  height: max-content;
+  background-color: #91268F;
+}
+
+.footer-links-secondary {
+  display: none;
+}
+
+.footer-links-primary {
+  width: 100%;
+  background: yellow;
+}
+
 /* criado para adaptação desktop */
 @media (min-width: 1200px) {
   .banner-img {
@@ -342,7 +371,7 @@ específico de tela */
     margin-top: 0.5rem;
   }
 
-  .box-btn-carroussel {
+  .box-btn-carousel {
     position: absolute;
     justify-content: space-between;
   }
@@ -379,4 +408,7 @@ específico de tela */
     font-size: 0.8rem;
   }
 
+  .session-modules {
+    margin-top: 9rem;
+  }
 }

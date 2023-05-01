@@ -35,7 +35,7 @@ $(document).ready(function () {
   }
 
   // para visualizar o carrossel em loop(após a última imagem volta para a primeira)
-  function showNextImageCarroussel() {
+  function showNextImagecarousel() {
     if (currentImage < numImages - 1) {
       $('.carousel-custom .card.active').removeClass('active').next().addClass('active');
       currentImage++;
@@ -55,7 +55,7 @@ $(document).ready(function () {
     }
   }
 
-  setInterval(showNextImageCarroussel, 3000);
+  setInterval(showNextImagecarousel, 3000);
 
   $('#next-btn').click(function () {
     showNextImage();
