@@ -12,6 +12,8 @@ Este projeto utiliza as seguintes tecnologias:
 - CSS
 - JavaScript
 - Bootstrap
+- SASS
+- Bootstrap
 
 ## Como Usar
 
