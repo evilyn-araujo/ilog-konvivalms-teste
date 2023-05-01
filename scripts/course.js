@@ -64,9 +64,9 @@ const courses = [
   },
   {
     title: 'Treine sua liderança',
-    duration: '15h',
+    duration: '15h 30min',
     category: 'Desenvolvimento pessoal e profissional',
-    rating: 3.0,
+    rating: 3.5,
     totalRatings: 50,
     points: 1000,
     imageUrl: 'https://www.konviva.com.br/wp-content/uploads/2022/12/iStock-1320918242-720x480.jpg'
@@ -84,7 +84,7 @@ const courses = [
     title: 'Como utilizar a plataforma PID',
     duration: '20h 30min',
     category: 'Desenvolvimento pessoal e profissional',
-    rating: 5.0,
+    rating: 5.2,
     totalRatings: 50,
     points: 1000,
     imageUrl: 'https://www.konviva.com.br/wp-content/uploads/2023/03/iStock-1358748397-720x405.jpg'
@@ -93,7 +93,7 @@ const courses = [
     title: 'Treine Times de 500 pessoas',
     duration: '20h 30min',
     category: 'Desenvolvimento pessoal e profissional',
-    rating: 5.0,
+    rating: 5.3,
     totalRatings: 50,
     points: 1000,
     imageUrl: 'https://www.konviva.com.br/wp-content/uploads/2023/03/iStock-1386241232-720x480.jpg'

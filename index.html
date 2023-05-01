@@ -94,20 +94,52 @@
     </div>
   </section>
   <!-- sessão de trilhas -->
-  <section id="modules" class="d-flex session-modules flex-column">
+  <section id="modules" class="d-flex session-modules flex-column vh-100">
     <p class="h4 text-light title-session">Trilhas</p>
+    <div id="carousel" class="d-flex carousel-custom"><!--scripts/courses.js --></div>
+    <!-- botões(próximo e anterior) -->
+    <div class="box-btn-carousel d-flex">
+      <button id="prev-btn">
+        <img src="assets/icons/arrow-back.svg" alt="arrow-back">
+      </button>
+      <button id="next-btn">
+        <img src="assets/icons/arrow-forward.svg" alt="arrow-forward">
+      </button>
+    </div>
   </section>
   <!-- footer -->
   <footer>
     <div class="d-flex justify-content-center align-items-center final-footer-konviva flex-column">
       <div class="d-flex footer-links">
-        <div class="d-flex footer-links-primary">
+        <div class="d-flex footer-links-primary align-items-center justify-content-center flex-column">
+          <div class="img-flags">
+            <img src="assets/flag.svg" alt="bandeiras">
+          </div>
+          <ul class="d-flex flex-row navbar-nav nav-custom-konviva p-2">
+            <li class="nav-item active d-flex">
+              <img src="assets/icons/home.svg">
+              <a class="nav-link m-1" href="#">HOME</a>
+            </li>
+            <li class="nav-item d-flex">
+              <img src="assets/icons/school.svg">
+              <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/consultacertificado/"
+                target="_blank">CERTIFICADOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/pagina/11"
+                target="_blank">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/pagina/15"
+                target="_blank">CADASTRE-SE</a>
+            </li>
+          </ul>
         </div>
         <div class="footer-links-secondary">
           <img src="assets/footer-konviva-300px.svg">
         </div>
       </div>
-      <div>
+      <div class="p-3 d-flex align-items-center justify-content-center">
         <img src="assets/footer-konviva-lms.svg" alt="konviva logo">
       </div>
     </div>

@@ -115,7 +115,6 @@ específico de tela */
 #prev-btn {
   width: 3.125rem;
   height: 3.125rem;
-  display: none;
   box-sizing: border-box;
 
   filter: drop-shadow(0.0625rem 0.125rem 0.625rem #333333);
@@ -126,7 +125,6 @@ específico de tela */
 #next-btn {
   width: 3.125rem;
   height: 3.125rem;
-  display: block;
   box-sizing: border-box;
 
   filter: drop-shadow(0.0625rem 0.125rem 0.625rem #333333);
@@ -257,14 +255,13 @@ footer {
 /* footer */
 .final-footer-konviva {
   width: 100%;
-  height: 80px;
   background: #E8E8E8;
 }
 
 .footer-links {
   width: 100%;
   height: max-content;
-  background-color: #91268F;
+  background: #FFFFFF;
 }
 
 .footer-links-secondary {
@@ -273,7 +270,6 @@ footer {
 
 .footer-links-primary {
   width: 100%;
-  background: yellow;
 }
 
 /* criado para adaptação desktop */
@@ -350,7 +346,8 @@ footer {
 
   .carousel-custom .card {
     min-width: 20%;
-    height: 20.75rem;
+    height: 30%;
+    min-height: 20rem;
     flex: 1;
     position: relative;
     opacity: 1;
@@ -368,20 +365,22 @@ footer {
   }
 
   .btn-final {
-    margin-top: 0.5rem;
+    margin-top: 2rem;
   }
 
   .box-btn-carousel {
+    width: 100%;
     position: absolute;
+    margin-top: 15rem;
     justify-content: space-between;
   }
 
   #prev-btn {
-    display: none !important;
+    display: block;
   }
 
   #next-btn {
-    display: none !important;
+    display: block;
   }
 
   .bottom-card-title {
@@ -410,5 +409,22 @@ footer {
 
   .session-modules {
     margin-top: 9rem;
+  }
+
+  .footer-links-primary {
+    height: 147px;
+    justify-content: start !important;
+    align-items: start !important;
+    flex-direction: column-reverse !important;
+    margin-left: 1rem;
+  }
+  
+  .footer-links-secondary {
+    display: block;
+    padding: 2rem;
+  }
+
+  .img-flags {
+    padding-left: 0.5rem;
   }
 }
