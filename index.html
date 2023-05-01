@@ -12,45 +12,45 @@
   <title>Academia Konviva</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <a class="navbar-brand" href="#">
-      <div class="m-3">
-        <img src="assets/menu-konviva.svg" alt="logo konviva">
-      </div>
-    </a>
-    <button class="navbar-toggler outline-0 border-0 m-3" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end z-index-1000" id="navbarNav">
-      <ul class="navbar-nav nav-custom-konviva p-2">
-        <li class="nav-item active d-flex">
-          <img src="assets/icons/home.svg">
-          <a class="nav-link m-1" href="#">HOME</a>
-        </li>
-        <li class="nav-item d-flex">
-          <img src="assets/icons/school.svg">
-          <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/consultacertificado/"
-            target="_blank">CERTIFICADOS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/pagina/11" target="_blank">BLOG</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/pagina/15"
-            target="_blank">CADASTRE-SE</a>
-        </li>
-        <li class="nav-item m-1">
-          <button type="button" class="btn btn-custom-konviva rounded-0">
-            Acesse Agora
-            <img src="assets/icons/login.svg">
-          </button>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<bodyc class="">
   <header id="hero-form">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#">
+        <div class="m-3">
+          <img src="assets/menu-konviva.svg" alt="logo konviva">
+        </div>
+      </a>
+      <button class="navbar-toggler outline-0 border-0 m-3" type="button" data-toggle="collapse"
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end z-index-1000" id="navbarNav">
+        <ul class="navbar-nav nav-custom-konviva p-2">
+          <li class="nav-item active d-flex">
+            <img src="assets/icons/home.svg">
+            <a class="nav-link m-1" href="#">HOME</a>
+          </li>
+          <li class="nav-item d-flex">
+            <img src="assets/icons/school.svg">
+            <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/consultacertificado/"
+              target="_blank">CERTIFICADOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/pagina/11" target="_blank">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" href="https://academia.konviva.com.br/lms/#/home/pagina/15"
+              target="_blank">CADASTRE-SE</a>
+          </li>
+          <li class="nav-item m-1">
+            <button type="button" class="btn btn-custom-konviva rounded-0">
+              Acesse Agora
+              <img src="assets/icons/login.svg">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- banner-hero1 -->
     <div class="banner-img d-none d-xxl-block"><img src="assets/banner.png"></div>
     <!-- banner-hero-2 a partir de 1400px -->
@@ -61,7 +61,7 @@
         <div class="d-flex flex-column mb-2">
           <p class="input-label">Login</p>
           <div id="input-email" class="input">
-            <input id="email" type="text" autocomplete="off" placeholder="999.999.999-99" required>
+            <input id="email" type="email" autocomplete="off" placeholder="email@gmail.com" required>
           </div>
         </div>
         <div class="d-flex flex-column">
@@ -79,21 +79,65 @@
       </form>
     </div>
   </header>
-
-  <section id="course">
-    <p class="">Cursos</p>
+  <!-- sessão de cursos  -->
+  <section id="course" class="session-course mt-4 p-2">
+    <p class="h4 text-light">Cursos</p>
+    <div id="carousel" class="carousel-custom">
+      <div class="card d-flex flex-column rounded">
+        <div class="top-card rounded-top">
+          <div class="booble-course">Curso</div>
+          <img class="img-fluid rounded-top img-card"
+            src="https://www.konviva.com.br/wp-content/uploads/2022/02/BANNER-EMAIL-MKT_CATALOGO-DE-FUNCIONALIDADES_640-X-360-1024x576.png"
+            alt="capa do curso">
+        </div>
+        <div class="bottom-card p-3 d-flex flex-column align-items-star justify-content-center">
+          <p class="bottom-card-title">Transformando Comportamentos em tempos de mudança</p>
+          <div class="bottom-card-description d-flex d-flex align-items-star justify-content-center">
+            <div class="card-description-bold">20h 30min</div>
+            <div class="text-truncate card-description">Desenvolvimento pessoal e profissional</div>
+          </div>
+          <div class="box-center-card d-flex justify-content-between">
+            <div class="d-flex box-center-star align-items-star">
+              <div class="stars-container d-flex">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <div class="ml-2">
+                <span class="average-rating">4.5</span>
+                <span class="total-ratings">(100+)</span>
+              </div>
+            </div>
+            <div class="card-description">20.000 Pontos</div>
+          </div>
+          <div class="btn-final">
+            <button class="btn btn-link">MAIS INFORMAÇÕES</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- botões(próximo e anterior) -->
+    <div class="box-btn-carroussel d-flex">
+      <button id="prev-btn">
+        <img src="assets/icons/arrow-back.svg" alt="arrow-back">
+      </button>
+      <button id="next-btn">
+        <img src="assets/icons/arrow-forward.svg" alt="arrow-forward">
+      </button>
+    </div>
   </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- JavaScript (Opcional) -->
+  <script src="app.js"></script>
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-</body>
+  </body>
 
 </html>

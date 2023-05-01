@@ -1,11 +1,16 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-.btn:active{
+.btn:active {
   background: #B73BAC !important;
   color: #ffffff !important;
 }
 
-.navbar{
+.btn-link:active {
+  background: none !important;
+  color: #B73BAC !important;
+}
+
+.navbar {
   width: 100%;
   position: fixed;
   z-index: 1000;

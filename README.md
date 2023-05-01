@@ -1,6 +1,8 @@
 # TESTE TÉCNICO ILOG · FRONT-END (VAGA PROFISSIONAL JÚNIOR)
 
- O desafio proposto consiste na simulação da tela de Portal de Cursos no *Konviva LMS*, onde testará as habilidades e qualidade de código do desenvolvedor front-end e conhecimentos em layout.
+ O desafio proposto consiste na simulação da tela de Portal de Cursos no *Konviva LMS*,
+ onde testará as habilidades e qualidade de código do desenvolvedor front-end e conhecimentos
+ em layout.
 
 ## Tecnologias Utilizadas
 
@@ -36,6 +38,7 @@ Este projeto utiliza as seguintes tecnologias:
 <hr>
 
 ### **Se você recebeu um projeto em um arquivo zipado, siga os seguintes passos para executá-lo:**
+
 1. Faça o download do arquivo zip do projeto para o seu computador.
 
 2. Extraia o conteúdo do arquivo zip para uma pasta local em seu computador.
