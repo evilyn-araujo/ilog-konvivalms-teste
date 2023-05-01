@@ -84,10 +84,6 @@ específico de tela */
 }
 
 /* Início estilo da sessão de cursos */
-.title-session {
-  margin-left: 2.4rem;
-}
-
 .carousel-custom {
   width: 100%;
   height: 100%;
@@ -278,6 +274,10 @@ específico de tela */
   .box-responsive {
     padding-top: 8rem;
     display: block;
+  }
+
+  .title-session {
+    margin-left: 2.4rem;
   }
 
   .session-course {
