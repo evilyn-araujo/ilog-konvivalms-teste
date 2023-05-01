@@ -25,7 +25,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end z-index-1000" id="navbarNav">
-        <ul class="navbar-nav nav-custom-konviva p-2">
+        <ul class="d-flex navbar-nav nav-custom-konviva p-2">
           <li class="nav-item active d-flex">
             <img src="assets/icons/home.svg">
             <a class="nav-link m-1" href="#">HOME</a>
@@ -56,11 +56,11 @@
     <!-- banner-hero-2 a partir de 1400px -->
     <div class="box-responsive d-xxl-none"><img src="assets/hero-1.svg"></div>
     <!-- formulário -->
-    <div class="form-custom-konviva">
-      <form class="form-konviva">
+    <div class="d-flex form-custom-konviva">
+      <form class="d-flex form-konviva flex-column">
         <div class="d-flex flex-column mb-2">
           <p class="input-label">Login</p>
-          <div id="input-email" class="input">
+          <div id="input-email" class="d-flex input">
             <input id="email" type="email" autocomplete="off" placeholder="email@gmail.com" required>
           </div>
         </div>
@@ -80,9 +80,9 @@
     </div>
   </header>
   <!-- sessão de cursos  -->
-  <section id="course" class="session-course mt-4 p-2">
-    <p class="h4 text-light">Cursos</p>
-    <div id="carousel" class="carousel-custom"><!-- visualize em scripts/courses.js --></div>
+  <section id="course" class="d-flex session-course flex-column">
+    <p class="h4 text-light title-session">Cursos</p>
+    <div id="carousel" class="d-flex carousel-custom"><!--scripts/courses.js --></div>
     <!-- botões(próximo e anterior) -->
     <div class="box-btn-carroussel d-flex">
       <button id="prev-btn">
