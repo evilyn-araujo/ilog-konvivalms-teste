@@ -34,6 +34,8 @@ $(document).ready(function () {
     }
   }
 
+  setInterval(showNextImage, 3000);
+
   $('#next-btn').click(function () {
     showNextImage();
   });
