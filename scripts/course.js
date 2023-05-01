@@ -51,7 +51,7 @@ const courses = [
     rating: 3,
     totalRatings: 50,
     points: 1000,
-    imageUrl: 'https://www.konviva.com.br/wp-content/uploads/2022/08/DIA_26_ARTIGO_KONVIVA_AGOSTO-720x761.png'
+    imageUrl: 'https://www.konviva.com.br/wp-content/uploads/2019/04/news-konviva.png'
   },
   {
     title: 'Panorama T&D',
@@ -63,7 +63,7 @@ const courses = [
     imageUrl: 'https://www.konviva.com.br/wp-content/uploads/2022/08/DIA_26_ARTIGO_KONVIVA_AGOSTO-720x761.png'
   },
   {
-    title: 'Treine sua liderança e obtenha mais do seu time',
+    title: 'Treine sua liderança',
     duration: '15h',
     category: 'Desenvolvimento pessoal e profissional',
     rating: 3,
@@ -81,7 +81,7 @@ const courses = [
     imageUrl: 'https://www.konviva.com.br/wp-content/uploads/2022/08/DIA_26_ARTIGO_KONVIVA_AGOSTO-720x761.png'
   },
   {
-    title: 'Como utilizar a plataforma para desenvolver o pdi na sua empresa',
+    title: 'Como utilizar a plataforma PID',
     duration: '20h 30min',
     category: 'Desenvolvimento pessoal e profissional',
     rating: 800,
@@ -107,13 +107,13 @@ function createCourseElement(course) {
   courseElement.innerHTML = `
     <div class="top-card rounded-top">
       <div class="booble-course">Curso</div>
-      <img class="img-fluid rounded-top img-card" src="${course.imageUrl}" alt="capa do curso">
+      <img class="img-fluid rounded-top img-card" src="${course.imageUrl || "https://play-lh.googleusercontent.com/jgqE3RuyTNA0HXNtqZZUzW_jlM4u6x82D1IhjwZ7d0oBdiRdO2mzSZVetYbNYcl75yQ"}" alt="capa do curso">
     </div>
     <div class="bottom-card p-3 d-flex flex-column align-items-star justify-content-center">
-      <p class="bottom-card-title">${course.title}</p>
+      <p class="bottom-card-title">${course.title || "Nome do Curso"}</p>
       <div class="bottom-card-description d-flex d-flex align-items-star justify-content-center">
-        <div class="card-description-bold">${course.duration}</div>
-        <div class="text-truncate card-description">${course.category}</div>
+        <div class="card-description-bold">${course.duration || "20hrs"}</div>
+        <div class="text-truncate card-description">${course.category || "Categoria do curso"}</div>
       </div>
       <div class="box-center-card d-flex justify-content-between">
         <div class="d-flex box-center-star align-items-star">

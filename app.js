@@ -34,7 +34,28 @@ $(document).ready(function () {
     }
   }
 
-  setInterval(showNextImage, 3000);
+  // para visualizar o carrossel em loop(após a última imagem volta para a primeira)
+  function showNextImageCarroussel() {
+    if (currentImage < numImages - 1) {
+      $('.carousel-custom .card.active').removeClass('active').next().addClass('active');
+      currentImage++;
+      // controle de apresentação dos botões
+      if (currentImage == numImages - 1) {
+        $('#next-btn').hide();
+        $('#prev-btn').show();
+      } else {
+        $('#prev-btn').show();
+      }
+    } else {
+      $('.carousel-custom .card.active').removeClass('active');
+      $('.carousel-custom .card:first-child').addClass('active');
+      currentImage = 0;
+      $('#next-btn').show();
+      $('#prev-btn').hide();
+    }
+  }
+
+  setInterval(showNextImageCarroussel, 3000);
 
   $('#next-btn').click(function () {
     showNextImage();
