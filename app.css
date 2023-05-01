@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #004C9A;
+  overflow-y: auto;
+}
+
+/* início dos estilos do header */
+.btn-custom-konviva {
+  background: #91268F;
+  color: #FFFFFF;
+}
+
+.btn-custom-konviva:hover {
+  background: #B73BAC;
+  color: #FFFFFF;
+}
+
+.nav-custom-konviva {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.banner-img img {
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* caixa usada somente em tamanho 
+específico de tela */
+.box-responsive {
+  display: none;
+}
+
+/* formulário */
+.form-custom-konviva {
+  display: flex;
+  justify-content: end;
+  padding-top: 6rem;
+}
+
+.form-konviva {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 1.625rem;
+  background: #FFFFFF;
+}
+
+/* inputs do formulário(login e senha) */
+.input {
+  height: 2.3125rem;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #91268F;
+}
+
+.input input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #0C0C0C;
+  padding-left: 1rem;
+}
+
+.input input:focus {
+  outline: 0.125rem solid #91268F;
+}
+
+.input-label {
+  font-size: 1rem;
+}
+
+.btn-link-konviva {
+  background: none;
+}
+
+.session-courses {
+  background: yellow;
+}
+
+/* Início estilo da sessão de cursos */
+.carousel-custom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  color: #323232;
+  background: #0C0C0C;
+}
+
+.carousel-custom .card {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-custom .card.active {
+  opacity: 1;
+}
+
+.box-btn-carroussel {
+  position: relative;
+  justify-content: space-between;
+  top: 14.8rem;
+}
+
+#prev-btn {
+  display: none;
+  box-sizing: border-box;
+  filter: drop-shadow(0.0625rem 0.125rem 0.625rem #333333);
+  width: 3.125rem;
+  height: 3.125rem;
+  background: #FFFFFFA1;
+  border-radius: 6.25rem;
+}
+
+#next-btn {
+  display: block;
+  box-sizing: border-box;
+  filter: drop-shadow(0.0625rem 0.125rem 0.625rem #333333);
+
+  width: 3.125rem;
+  height: 3.125rem;
+  background: #FFFFFFA1;
+  border-radius: 6.25rem;
+}
+
+.top-card {
+  position: relative;
+}
+
+.img-card {
+  width: 100%;
+}
+
+.booble-course {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+
+  width: 80px;
+  height: 20px;
+  background: #303030;
+  border-radius: 20px;
+  color: #FFFFFF;
+  margin: 1rem 0.5rem;
+}
+
+/* estilizando parte final do card */
+.bottom-card-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.box-center-card {
+  width: 100%;
+}
+
+.box-center-stars {
+  width: 50%;
+  gap: 1rem;
+}
+
+.box-center-star {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-description {
+  font-weight: 400;
+  font-size: larger;
+  color: rgba(0, 0, 0, 0.5);
+  /* background: #004C9A; */
+}
+
+.card-description-bold {
+  width: 50%;
+  font-weight: bold;
+  font-size: larger;
+  color: rgba(0, 0, 0, 0.5);
+  /* background: pink; */
+}
+
+.bottom-card-description {
+  width: 100%;
+  gap: 1rem
+}
+
+/* estrela de avaliação */
+.stars-container {
+  font-size: 0;
+  position: relative;
+  display: inline-block;
+  color: #f2b01e;
+}
+
+.stars-container .star:before {
+  content: "\2605";
+  font-size: x-large;
+  position: relative;
+}
+
+.stars-container .star.filled:before {
+  content: "\2605";
+  color: #f2b01e;
+  font-size: x-large;
+  position: relative;
+}
+
+.average-rating {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.total-ratings {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.btn-final {
+  width: 100%;
+}
+
+/* criado para adaptação desktop */
+@media (min-width: 1200px) {
+  .banner-img {
+    position: relative;
+    height: 28rem;
+    padding-top: 6rem;
+  }
+
+  .form-custom-konviva {
+    width: 25%;
+    position: absolute;
+    top: 4rem;
+    left: 70%;
+  }
+
+  .form-konviva {
+    background: rgba(255, 255, 255, 0.7);
+    height: 19em;
+  }
+
+  .input {
+    border: none;
+  }
+
+  .box-responsive {
+    padding-top: 8rem;
+    display: block;
+    /* background: #FFFFFF; */
+  }
+}

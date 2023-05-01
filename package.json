@@ -1,0 +1,16 @@
+{
+  "name": "ilog-konvivalms",
+  "version": "1.0.0",
+  "description": "O desafio proposto consiste na simulação da tela de Portal de Cursos no *Konviva LMS*, onde testará as habilidades e qualidade de código do desenvolvedor front-end e conhecimentos em layout.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch css/style.scss css/style.css",
+    "sass-min": "node-sass --watch css/style.scss css/style.min.css --output-style compressed"
+  },
+  "keywords": [],
+  "author": "evilyn",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
