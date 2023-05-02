@@ -104,7 +104,7 @@ específico de tela */
 
 .carousel-custom .card {
   height: 100%;
-  min-width: 100%;
+  min-width: 30rem;
   min-height: 30rem;
   position: relative;
   opacity: 1;
@@ -339,7 +339,6 @@ footer {
     position: relative;
     opacity: 1;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
   }
 
   /* Início estilo da sessão de cursos */
