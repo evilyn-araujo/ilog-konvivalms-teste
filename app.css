@@ -104,7 +104,7 @@ específico de tela */
 
 .carousel-custom .card {
   height: 100%;
-  min-width: 100%;
+  min-width: 27rem;
   min-height: 30rem;
   position: relative;
   opacity: 1;
@@ -258,12 +258,13 @@ específico de tela */
 }
 
 .session-modules {
-  margin-top: 12rem;
+  margin-top: 4rem;
   height: 40rem;
 
 }
 
 footer {
+  width: 100%;
   border-top: 1px solid #6c757d;
 }
 
@@ -332,14 +333,12 @@ footer {
 
 
   .carousel-custom .card {
-    min-width: 20%;
+    min-width: 25%;
     height: 30%;
-    min-height: 24rem;
+    min-height: 23rem;
     flex: 1;
-    position: relative;
-    opacity: 1;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
   }
 
   /* Início estilo da sessão de cursos */

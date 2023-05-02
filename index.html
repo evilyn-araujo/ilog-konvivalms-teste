@@ -155,48 +155,38 @@
   * 
   */
     $(document).ready(function () {
-      var numImages = $('.carousel-custom .card').length;
-      var currentImage = 1;
-      var currentImage = 1;
-      var imageWidth = $('.carousel-custom .card').outerWidth(true);
-      var carousel = $('.carousel-custom .card');
-
-      $('.carousel-custom .card:nth-child(1)').addClass('active');
-
-      // para visualizar próximo cartão
-      function showNextImage() {
-        if (currentImage < numImages) {
-          $('.carousel-custom .card.active').removeClass('active').next().addClass('active');
-          currentImage++;
-        } else {
-          $('.carousel-custom .card.active').removeClass('active');
-          $('.carousel-custom .card:first-child').addClass('active');
-          currentImage = 1;
-        }
-        carousel.animate({ left: "-=" + imageWidth });
-      }
-      
-      // para visualizar o cartão anterior
-      function showPrevImage() {
-        if (currentImage > 1) {
-          $('.carousel-custom .card.active').removeClass('active').prev().addClass('active');
-          currentImage--;
-        } else {
-          $('.carousel-custom .card.active').removeClass('active');
-          $('.carousel-custom .card:last-child').addClass('active');
-          currentImage = numImages;
-        }
-        carousel.animate({ left: "+=" + imageWidth });
-      }
-
+      // Define a largura de cada cartão
+      const cardWidth = $('.carousel-custom .card').outerWidth(true);
+      // Define o número total de cartões
+      const numCards = $('.carousel-custom .card').length;
+      // Define o número máximo de cartões visíveis de uma vez
+      const numVisibleCards = 4;
+      // Define a posição atual do carrossel
+      let currentPos = 0;
+      // FIXME: pendente a correção do cálculo da div
+      // Adiciona um listener de click no botão "próximo"
       $('#next-btn').click(function () {
-        showNextImage();
+        // Verifica se há cartões suficientes para avançar
+        if (currentPos < numCards - numVisibleCards) {
+          // Move o carrossel para a direita
+          currentPos += numVisibleCards;
+          $('.carousel-custom .card').animate({ left: `-=${cardWidth * numVisibleCards}px` });
+        }
       });
 
+      // Adiciona um listener de click no botão "anterior"
       $('#prev-btn').click(function () {
-        showPrevImage();
+        // Verifica se há cartões suficientes para recuar
+        if (currentPos > 0) {
+          // Move o carrossel para a esquerda
+          currentPos -= numVisibleCards;
+          $('.carousel-custom .card').animate({ left: `+=${cardWidth * numVisibleCards}px` });
+        }
       });
-    });</script>
+
+      console.log(cardWidth)
+    });
+  </script>
   <!-- javaScript -->
   <script src="scripts/course.js"></script>
   <script src="scripts/module.js"></script>
