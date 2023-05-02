@@ -246,6 +246,7 @@ específico de tela */
 .session-modules {
   margin-top: 12rem;
   height: 40rem;
+
 }
 
 footer {
@@ -347,7 +348,7 @@ footer {
   .carousel-custom .card {
     min-width: 20%;
     height: 30%;
-    min-height: 20rem;
+    min-height: 24rem;
     flex: 1;
     position: relative;
     opacity: 1;
@@ -371,7 +372,7 @@ footer {
   .box-btn-carousel {
     width: 100%;
     position: absolute;
-    margin-top: 15rem;
+    margin-top: 14rem;
     justify-content: space-between;
   }
 
@@ -408,7 +409,7 @@ footer {
   }
 
   .session-modules {
-    margin-top: 9rem;
+    margin-top: 5rem;
   }
 
   .footer-links-primary {
