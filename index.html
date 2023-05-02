@@ -145,6 +145,58 @@
   </footer>
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    /**
+  TODO: lembrando que esse código foi reaproveitado 
+  em ambos os elementos "carousel", ou seja, ele está funcionando
+  nos dois ao mesmo tempo. Para impedir isso, basta dividir os elementos
+  por "Id" diferentes. Para otimização do tempo, nesse caso e apenas para demonstração
+  foi deixado assim.
+  * 
+  */
+    $(document).ready(function () {
+      var numImages = $('.carousel-custom .card').length;
+      var currentImage = 1;
+      var currentImage = 1;
+      var imageWidth = $('.carousel-custom .card').outerWidth(true);
+      var carousel = $('.carousel-custom .card');
+
+      $('.carousel-custom .card:nth-child(1)').addClass('active');
+
+      // para visualizar próximo cartão
+      function showNextImage() {
+        if (currentImage < numImages) {
+          $('.carousel-custom .card.active').removeClass('active').next().addClass('active');
+          currentImage++;
+        } else {
+          $('.carousel-custom .card.active').removeClass('active');
+          $('.carousel-custom .card:first-child').addClass('active');
+          currentImage = 1;
+        }
+        carousel.animate({ left: "-=" + imageWidth });
+      }
+      
+      // para visualizar o cartão anterior
+      function showPrevImage() {
+        if (currentImage > 1) {
+          $('.carousel-custom .card.active').removeClass('active').prev().addClass('active');
+          currentImage--;
+        } else {
+          $('.carousel-custom .card.active').removeClass('active');
+          $('.carousel-custom .card:last-child').addClass('active');
+          currentImage = numImages;
+        }
+        carousel.animate({ left: "+=" + imageWidth });
+      }
+
+      $('#next-btn').click(function () {
+        showNextImage();
+      });
+
+      $('#prev-btn').click(function () {
+        showPrevImage();
+      });
+    });</script>
   <!-- javaScript -->
   <script src="scripts/course.js"></script>
   <script src="scripts/module.js"></script>

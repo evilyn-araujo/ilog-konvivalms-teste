@@ -149,3 +149,4 @@ function renderCourses(courses) {
 }
 
 renderCourses(courses)
+

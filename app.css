@@ -83,33 +83,44 @@ específico de tela */
   background: none;
 }
 
+
+.title-session {
+  margin-left: 2.4rem;
+}
+
 /* Início estilo da sessão de cursos */
 .carousel-custom {
   width: 100%;
-  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 0.5rem;
+}
 
-  position: relative;
-  color: #323232;
+.card-description-bold {
+  font-size: medium;
 }
 
 .carousel-custom .card {
-  width: 100%;
-  height: 33.5rem;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+  height: 100%;
+  min-width: 100%;
+  min-height: 30rem;
+  position: relative;
+  opacity: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
+
+.carousel-custom::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+}
+
 
 .carousel-custom .card.active {
   opacity: 1;
-}
-
-.box-btn-carousel {
-  justify-content: space-between;
-  margin-top: 20rem;
 }
 
 #prev-btn {
@@ -120,12 +131,15 @@ específico de tela */
   filter: drop-shadow(0.0625rem 0.125rem 0.625rem #333333);
   background: #FFFFFFA1;
   border-radius: 6.25rem;
+  display: none;
+
 }
 
 #next-btn {
   width: 3.125rem;
   height: 3.125rem;
   box-sizing: border-box;
+  display: none;
 
   filter: drop-shadow(0.0625rem 0.125rem 0.625rem #333333);
   background: #FFFFFFA1;
@@ -302,48 +316,20 @@ footer {
     display: block;
   }
 
-  .title-session {
-    margin-left: 2.4rem;
-  }
-
   .session-course {
     margin-top: 5rem;
     overflow: hidden;
   }
 
-  .carousel-custom {
-    width: 100%;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    gap: 2rem;
-    padding: 2rem 2.4rem;
-  }
-
   .card-description-bold {
     font-size: medium;
   }
 
-  .carousel-custom .card {
-    height: 25%;
-    min-width: 20%;
-    min-height: 20rem;
-    position: relative;
-    opacity: 1;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+  .box-btn-carousel {
+    justify-content: space-between;
+    margin-top: 10rem;
   }
 
-  .carousel-custom::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    background-color: transparent;
-  }
-
-
-  .card-description-bold {
-    font-size: medium;
-  }
 
   .carousel-custom .card {
     min-width: 20%;
@@ -354,6 +340,11 @@ footer {
     opacity: 1;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+  }
+
+  /* Início estilo da sessão de cursos */
+  .carousel-custom {
+    padding: 2rem 2.4rem;
   }
 
   .card:hover {
@@ -419,7 +410,7 @@ footer {
     flex-direction: column-reverse !important;
     margin-left: 1rem;
   }
-  
+
   .footer-links-secondary {
     display: block;
     padding: 2rem;
