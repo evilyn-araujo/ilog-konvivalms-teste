@@ -155,7 +155,7 @@
   * 
   */
     $(document).ready(function () {
-      // Define a largura de cada cartão
+      // Define a largura de cada cartão, incluindo o padding e margin "outerWidth"
       const cardWidth = $('.carousel-custom .card').outerWidth(true);
       // Define o número total de cartões
       const numCards = $('.carousel-custom .card').length;
@@ -183,8 +183,6 @@
           $('.carousel-custom .card').animate({ left: `+=${cardWidth * numVisibleCards}px` });
         }
       });
-
-      console.log(cardWidth)
     });
   </script>
   <!-- javaScript -->

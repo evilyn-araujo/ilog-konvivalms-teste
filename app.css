@@ -259,7 +259,7 @@ específico de tela */
 
 .session-modules {
   margin-top: 4rem;
-  height: 40rem;
+  /* background: pink; */
 
 }
 
@@ -333,8 +333,8 @@ footer {
 
 
   .carousel-custom .card {
-    min-width: 25%;
-    height: 30%;
+    min-width: 20%;
+    max-height: 30%;
     min-height: 23rem;
     flex: 1;
     cursor: pointer;
@@ -343,6 +343,7 @@ footer {
 
   /* Início estilo da sessão de cursos */
   .carousel-custom {
+    max-width: 100%;
     padding: 2rem 2.4rem;
   }
 

@@ -98,6 +98,15 @@ const modules = [
     points: 1000,
     imageUrl: 'https://www.konviva.com.br/wp-content/uploads/2023/03/iStock-1386241232-720x480.jpg'
   },
+  {
+    title: 'Treine Times de 500 pessoas',
+    duration: '20h 30min',
+    category: 'Desenvolvimento pessoal e profissional',
+    rating: 5.3,
+    totalRatings: 50,
+    points: 1000,
+    imageUrl: 'https://www.konviva.com.br/wp-content/uploads/2023/03/iStock-1386241232-720x480.jpg'
+  },
 ];
 
 // Função para criar a estrutura HTML para cada curso
